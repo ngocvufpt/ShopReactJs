@@ -6,7 +6,9 @@ export default function NavBar() {
       <div className="container py-3 ">
         <div className="row">
           <div className="col-md-2 py-3">
-            <Link to="/">Logo</Link>
+            <Link to="/">
+              <img src="/public/img/logo.png" alt="" />
+            </Link>
           </div>
           <div className="col-md-5">
             <div className="input-group mb-3 py-3">
@@ -61,88 +63,63 @@ export default function NavBar() {
               <div className="col-md ">
                 <ul className="nav justify-content-center ">
                   <li className="nav-item">
-                    <a
-                      className="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Beleuchtung<i className="fa-solid fa-chevron-down"></i>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Growbox<i className="fa-solid fa-chevron-down"></i>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Dünger<i className="fa-solid fa-chevron-down"></i>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Erde & Substrate
-                      <i className="fa-solid fa-chevron-down"></i>
-                    </a>
+                    <Link className="nav-link text-white active" to={"/"}>
+                      Home
+                    </Link>
                   </li>
                   <li className="nav-item dropdown">
-                    <a
-                      className="nav-link text-white dropdown-toggle"
-                      href="#"
+                    <Link
+                      to={"/shop"}
+                      className="nav-link text-white "
                       id="navbarDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                      // data-bs-toggle="dropdown"
+                      // aria-expanded="false"
                     >
-                      Töpfe & Behälter
-                    </a>
-                    <ul
+                      Shop
+                    </Link>
+                    {/* <ul
                       className="dropdown-menu"
                       aria-labelledby="navbarDropdown"
                     >
                       <li>
                         <Link className="dropdown-item" to={"Temple"}>
-                          Eckige Töpfe
+                          Cafe Chair
                         </Link>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Runde Töpfe
+                          Sofa
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Untersetzer
+                          Lamp
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="#">
-                          Pflanzschalen
+                          Carpet
                         </a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white" href="#">
-                      Bewässerung<i className="fa-solid fa-chevron-down"></i>
+                    <a
+                      className="nav-link text-white active"
+                      aria-current="page"
+                      href="#"
+                    >
+                      About
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white" href="#">
-                      Pflanzen & Gärtnern
-                      <i className="fa-solid fa-chevron-down"></i>
+                    <a
+                      className="nav-link text-white active"
+                      aria-current="page"
+                      href="#"
+                    >
+                      Contact
                     </a>
                   </li>
                 </ul>

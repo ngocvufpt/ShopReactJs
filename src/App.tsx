@@ -40,7 +40,7 @@ function App() {
       console.log(error);
     }
   }, []);
-  const Removecate = (id: number) => {
+  const Removecate = (id?: number | string) => {
     (async () => {
       if (confirm("Are you sure?")) {
         try {
@@ -119,7 +119,7 @@ function App() {
           <Route index element={<Main />} />
           <Route path="/home" element={<Home products={products} />}></Route>
           <Route path="/product-detail/:id" element={<ProductDetail />} />
-          <Route path="Temple" element={<Temple />} />
+          <Route path="/shop" element={<Temple />} />
           <Route path="/src/components/Detail.tsx" element={<Detail />} />
           <Route
             path="/src/components/Register.tsx"

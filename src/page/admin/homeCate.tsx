@@ -4,7 +4,7 @@ import { Icategory } from "../../interfaces/Product";
 
 type Props = {
   category: Icategory[];
-  cateRemove: (id: number) => void;
+  cateRemove: (id?: number | string) => void;
 };
 
 const HomeCate = ({ category, cateRemove }: Props) => {

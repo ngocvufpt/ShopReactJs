@@ -216,3 +216,11 @@ h2 {
   font-size: 25px;
   font-weight: bold;
 }
+/* .text-white.text-center {
+  font-family: none;
+} */
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -20,7 +20,7 @@ export default function Main() {
   }, []);
   return (
     <section>
-      <section className="slider mb-3">
+      <section className="container slider mb-3">
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
             <button
@@ -48,7 +48,7 @@ export default function Main() {
             <div className="carousel-item active">
               <img
                 src="/public/img/slide1.png"
-                className="d-block w-100"
+                className="d-block w-full"
                 alt="..."
               />
               <div>
@@ -67,14 +67,14 @@ export default function Main() {
             <div className="carousel-item">
               <img
                 src="/public/img/165657-0101-co-lan-chi-day-nhen-min.jpg"
-                className="d-block w-100"
+                className="d-block w-full"
                 alt="..."
               />
             </div>
             <div className="carousel-item">
               <img
                 src="/img/dich-vu-cham-soc-cay-xanh-san-vuon-don-ve-sinh-san-vuon.jpg"
-                className="d-block w-100"
+                className="d-block w-full"
                 alt="..."
               />
             </div>
@@ -113,7 +113,11 @@ export default function Main() {
         {products.map((product) => (
           <a key={product.id}>
             <Link to={`/product-detail/${product.id}`}>
-              <img src={product.image} alt={product.title} />
+              <img
+                src={product.image}
+                alt={product.title}
+                style={{ width: "250px", height: "250px" }}
+              />
               <p className=" ">{product.title}</p>
               <div className="price">
                 <span style={{ fontSize: "0.8vw" }}>

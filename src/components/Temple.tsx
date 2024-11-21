@@ -40,7 +40,7 @@ export default function Temple() {
       <div className="mymain">
         <div className="container">
           <div className="title">
-            <h4>Töpfe & Behälter</h4>
+            <h4>Shop</h4>
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ export default function Temple() {
                   <div key={product.id} className="product">
                     <Link to={`/product-detail/${product.id}`}>
                       <img
-                        className="img-sale"
+                        className="img-sale image-center"
                         src={product.image}
                         alt={product.name}
                       />
